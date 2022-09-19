@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')({sigint:true});
-//user input
+//user inputs
 let color1 = "none";
 let color2 = "none";
 let color3 = "none";
@@ -15,11 +15,12 @@ let p = "purple";
 let o = "orange";
 let g = "green";
 
+//asks user to enter color calculator
 console.log("Do you want to combine colors or deconstruct them?");
 input = prompt("Type 'c' to combine, or type 'd' to deconstruct: ");
 input = input.toLowerCase();
 
-if(input === c){
+if(input === c){ //combine
     console.log("Color Constructor:");
     console.log("---------------------");
     console.log("In order to create a new color, you to need enter two colors that you want to blend.");
@@ -46,7 +47,7 @@ if(input === c){
 
 
 }
-else if(input === d) {
+else if(input === d) { //deconstruct
 
     console.log("Color Destructor:");
     console.log("---------------------");
@@ -69,7 +70,7 @@ else if(input === d) {
         console.log("error");
     }
 }
-else{
+else{ 
     console.log("Bye!");
 }
 
