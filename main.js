@@ -4,8 +4,8 @@ let color1 = "none";
 let color2 = "none";
 let color3 = "none";
 let input = "none"
-let c = "combine";
-let d = "deconstruct";
+let c = "c";
+let d = "d";
 
 //colors
 let r = "red";
@@ -68,8 +68,7 @@ else if(input === d) {
     else{
         console.log("error");
     }
-}
-else{
+}else{
     console.log("Bye!");
 }
 
