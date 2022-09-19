@@ -23,20 +23,20 @@ if(input === c){
     console.log("Color Constructor:");
     console.log("---------------------");
     console.log("In order to create a new color, you to need enter two colors that you want to blend.");
-    color1 = prompt("Input Color One:");
+    color1 = prompt("Input Color One: ");
     color1 = color1.toLowerCase();
-    color2 = prompt("Input Color Two:");
+    color2 = prompt("Input Color Two: ");
     color2 = color2.toLowerCase();
  
-    if(color1 === r  &&  color2 === b || color2 === r  &&  color1 === b ){
+    if(color1 === r  &&  color2 === b || color1 === b  &&  color2 === r ){
 
         console.log(`output color: ${p} `)
     }
-    else if (color1 === r  &&  color2 === y || color2 === r  &&  color1 === y ){
+    else if (color1 === r  &&  color2 === y || color1 === y  &&  color2 === r ){
         console.log(`output color: ${o} `)
 
     }
-    else if (color1 === b  &&  color2 === y || color2 === b  &&  color1 === y ){
+    else if (color1 === b  &&  color2 === y ||  color1 === y && color2 === b){
         console.log(`output color: ${g} `)
 
     }
@@ -50,7 +50,7 @@ else if(input === d) {
 
     console.log("Color Destructor:");
     console.log("---------------------");
-    color3 = prompt("Input a color to deconstruct:");
+    color3 = prompt("Input a color to deconstruct: ");
     color3 = color3.toLowerCase();
     
     if(color3 === p){
@@ -68,7 +68,8 @@ else if(input === d) {
     else{
         console.log("error");
     }
-}else{
+}
+else{
     console.log("Bye!");
 }
 
